@@ -1,0 +1,21 @@
+{
+  "name": "aboutme",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "http://chafel.github.io/aboutme/",
+  "devDependencies": {
+    "react-scripts": "0.8.4"
+  },
+  "dependencies": {
+    "gh-pages": "^0.12.0",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
+  },
+  "scripts": {
+    "deploy": "npm run build&&gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
