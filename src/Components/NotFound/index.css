@@ -1,0 +1,10 @@
+.NotFound {
+  margin: 0;
+  font-family: 'Orbitron';
+}
+
+.NotFount-time {
+  width: 100%;
+  text-align: center;
+  text-shadow: 1px 1px #000
+}
