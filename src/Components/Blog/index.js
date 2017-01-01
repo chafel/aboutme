@@ -23,7 +23,8 @@ export default class Blog extends Component {
   render() {
     return (
       <div className="Blog" style={{width: '80%', margin: '0 auto', textAlign: 'initial'}}>
-        <div dangerouslySetInnerHTML={this.createMarkup()}></div>
+        <div dangerouslySetInnerHTML={this.createMarkup()}>
+        </div>
       </div>
     );
   }

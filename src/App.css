@@ -12,8 +12,9 @@
 .App-header {
   height: 50px;
   padding: 20px;
-  color: #444;
+  color: #eee;
   box-shadow: 0 3px 14px 0 RGBA(0, 0, 0, .2);
+  background-color: #14CCA7;
 }
 
 .App-header h4 {

@@ -4,6 +4,7 @@ import './App.css';
 
 import Blog from './Components/Blog';
 import NotFound from './Components/NotFound';
+import Resume from './Components/Resume';
 
 import { Router, Route, useRouterHistory } from 'react-router';
 import { createHistory } from 'history';
@@ -11,6 +12,7 @@ import { createHistory } from 'history';
 const routes = (
   <Route>
     <Route path="/blogs" component={Blog}/>
+    <Route path="/resume" component={Resume}/>
     <Route path="*" component={NotFound}/>
   </Route>
 );

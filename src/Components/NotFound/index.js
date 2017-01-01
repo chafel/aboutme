@@ -31,7 +31,10 @@ export default class NotFound extends Component {
         </h3>
         {this.state.displayTime}
         <p>
-          <Link to="/blogs">去这里看看？</Link>
+          去看看
+          <Link to="/blogs">自我介绍</Link>
+          或者
+          <Link to="/resume">简历</Link>
         </p>
       </div>
     );
