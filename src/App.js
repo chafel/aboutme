@@ -20,8 +20,10 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React world, I am chaofeis!</h2>
+          <h4>
+            <img src={logo} className="App-logo" alt="logo" />
+            Welcome to React world, I am chaofeis!
+          </h4>
         </div>
         <div className="App-intro">
           {this.props.children}

@@ -6,7 +6,6 @@ import renderMarkdown from '../../Utils/renderMarkdown';
 export default class Blog extends Component {
   createMarkup = () => {
     return {__html: renderMarkdown(`
-\`\`\`
 # The largest heading
 ## The second largest heading
 ###### The 6th largest heading
@@ -16,7 +15,8 @@ export default class Blog extends Component {
 >
 > - A list
 > - with items
-\`\`\`
+
+\`\`\` console.log('error') \`\`\`
       `)};
   };
 
