@@ -40,15 +40,14 @@ export default class Resume extends Component {
              dangerouslySetInnerHTML={{__html: `
           ## 孙超飞
 
-          @@ sss
-          @@ Email: [********@gmail.com](mailto:chaofeis@gmail.com)
-
-          @@ TEL: [(+86) 185-****-****](tel:+86-185-1461-6567)
-
-          @@ Twitter: [@chaofeis](https://twitter.com/chaofeis)
-          @@ Weibo: [@chaofeis](http://weibo.com/u/1825990963)
-          @@ Douban: [@chaofeis](http://www.douban.com/people/chafel)
-          @@ Website: [Github Pages](https://chafel.github.io/) & [aboutme](https://chafel.github.io/aboutme)
+          @@
+          @@
+          @@  Email: [********@gmail.com](mailto:chaofeis@gmail.com)
+          @@  TEL: [(+86) 185-****-****](tel:+86-185-1461-6567)
+          @@  Twitter: [@chaofeis](https://twitter.com/chaofeis)
+          @@  Weibo: [@chaofeis](http://weibo.com/u/1825990963)
+          @@  Douban: [@chaofeis](http://www.douban.com/people/chafel)
+          @@  Website: [Github Pages](https://chafel.github.io/) & [aboutme](https://chafel.github.io/aboutme)
 
           # Experience
 
@@ -57,7 +56,7 @@ export default class Resume extends Component {
           ## Front-end Developer @[BearyChat](https://bearychat.com/)  {01/2016—Present}
 
           - Use Angular@1.x to fix issues and implement features like commenting files and dnd-mode.
-          - Refactor BearyChat SPA with React and realized a [Ui-Kit](http://uikit.stage.bearychat.com/) with colleagues.
+          - Refactor BearyChat SPA with React and realized a [UIkit](http://uikit.stage.bearychat.com/) with colleagues.
 
           // Career
 
@@ -76,6 +75,8 @@ export default class Resume extends Component {
           # About me
 
           ## Lifelong Learner
+
+          :: learn more: https://github.com/chafel
           `}}>
         </div>
       </div>
