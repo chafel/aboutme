@@ -1,35 +1,37 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-
-import Blog from './Components/Blog';
-import NotFound from './Components/NotFound';
+import delay from './Utils/delay';
+// import Blog from './Components/Blog';
+// import NotFound from './Components/NotFound';
 import Resume from './Components/Resume';
 
-import { Router, Route, useRouterHistory } from 'react-router';
+import { Router, Route, Redirect, useRouterHistory } from 'react-router';
 import { createHistory } from 'history';
 
 const routes = (
   <Route>
-    <Route path="/blogs" component={Blog}/>
+    {/*<Route path="/blogs" component={Blog}/>*/}
     <Route path="/resume" component={Resume}/>
-    <Route path="*" component={NotFound}/>
+    <Redirect from="*" to="/"/>
   </Route>
 );
 
 class App extends Component {
+  componentDidMount() {
+    delay(1).then(() => this.props.router.push('/resume'));
+  }
+
   render() {
+    if (!this.props.children) {
+      return <h5>Is there anyone you are looking for? I guess so...</h5>
+    }
+
     return (
       <div className="App">
-        <div className="App-header">
-          <h4>
-            <img src={logo} className="App-logo" alt="logo" />
-            Welcome to React world, I am chaofeis!
-          </h4>
-        </div>
         <div className="App-intro">
-          {this.props.children}
         </div>
+        {this.props.children}
       </div>
     );
   }
