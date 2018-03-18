@@ -21,23 +21,8 @@ export default class Resume extends Component {
       return false;
     };
 
-    return (
-      <div className="Resume" id="Resume">
-        <div className="page-start"></div>
-
-        <div className="grand cont" id="cont">
-          <img className="avatar" src={avatar}/>
-        </div>
-
-        <div className="download-button-container">
-          <a className="download-button lazy-display-animation"
-             onClick={handlePrint.bind(this, 'Resume')}>
-            Download
-          </a>
-        </div>
-        <div style={{display: 'none'}}
-             ref={(_ref) => this.sourceDOM = _ref}
-             dangerouslySetInnerHTML={{__html: `
+    const content = {
+      __html: `
           ## A web developer
 
           @@
@@ -83,7 +68,26 @@ export default class Resume extends Component {
           ## Lifelong Learner
 
           :: learn more: https://github.com/chafel
-          `}}>
+          `
+    };
+
+    return (
+      <div className="Resume" id="Resume">
+        <div className="page-start"></div>
+
+        <div className="grand cont" id="cont">
+          <img className="avatar" alt="avatar" src={avatar}/>
+        </div>
+
+        <div className="download-button-container">
+          <a className="download-button lazy-display-animation"
+             onClick={handlePrint.bind(this, 'Resume')}>
+            Download
+          </a>
+        </div>
+        <div style={{display: 'none'}}
+             ref={(_ref) => this.sourceDOM = _ref}
+             dangerouslySetInnerHTML={content}>
         </div>
       </div>
     );

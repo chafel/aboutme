@@ -1,4 +1,5 @@
 // COPY FROM https://raw.githubusercontent.com/joyneop/yart/master/yart.js
+/* eslint-disable */
 var resumeMarkdownParser = function (rawInput) {
   String.prototype._parseMarkdownAnchor = function () {
     return this.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank">$1</a>');
