@@ -38,7 +38,7 @@ export default class Resume extends Component {
         <div style={{display: 'none'}}
              ref={(_ref) => this.sourceDOM = _ref}
              dangerouslySetInnerHTML={{__html: `
-          ## 孙超飞
+          ## A web developer
 
           @@
           @@
@@ -47,18 +47,22 @@ export default class Resume extends Component {
           @@  Twitter: [@chaofeis](https://twitter.com/chaofeis)
           @@  Weibo: [@chaofeis](http://weibo.com/u/1825990963)
           @@  Douban: [@chaofeis](http://www.douban.com/people/chafel)
-          @@  Website: [Github Pages](https://chafel.github.io/) & [aboutme](https://chafel.github.io/aboutme)
+          @@  Website: [Github Pages](https://chafel.github.io/)
 
           # Experience
 
           // Current
+          ## Web developer @[didichuxing](http://www.didichuxing.com/) {09/2017—Present}
 
-          ## Front-end Developer @[BearyChat](https://bearychat.com/)  {01/2016—Present}
-
-          - Use Angular@1.x to fix issues and implement features like commenting files and dnd-mode.
-          - Refactor BearyChat SPA with React and realized a [UIkit](http://uikit.stage.bearychat.com/) with colleagues.
+          - Achieving substantial internal web systems with Koa/MobX/Dva/Ant Design/Mongoose
 
           // Career
+          ## Front-end Developer @[BearyChat](https://bearychat.com/)  {01/2016—08/2017}
+
+          - Use Angular@1.x to fix issues and implement features like commenting files and dnd-mode.
+          - Refactor BearyChat SPA with React and Redux.
+          - Build a [UIkit](http://uikit.stage.bearychat.com/) with colleagues.
+          - Rewrite [all register and login pages](https://bearychat.com/start) and realize i18n.
 
           ## Web Developer @[X Man Legal](http://xmanlegal.com/)  {09/2015—01/2016}
 
@@ -68,9 +72,11 @@ export default class Resume extends Component {
 
           - Build hybrid applications with Angular@1.x and Backbone.
 
+          ## A miraculous experience as mystery for changing life  {09/2014—06/2015}
+
           # Education
 
-          ## 西安电子科技大学 电子工程学院  {08/2010—06/2014}
+          ## Obtain a bachelor's degree in Electronic Engineering from [Xidian University](http://www.xidian.edu.cn/)  {08/2010—06/2014}
 
           # About me
 
