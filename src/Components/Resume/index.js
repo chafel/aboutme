@@ -11,9 +11,12 @@ export default class Resume extends Component {
   render() {
     // FROM HERE: https://forums.asp.net/t/1261525.aspx
     const handlePrint = (printpage) => {
-      var headstr = "<html><head><title></title></head><body>";
+      var headstr = "<html><head><title></title><style></style></head><body>";
       var footstr = "</body>";
       var newstr = document.all.item(printpage).innerHTML;
+      newstr = newstr.replace('********@gmail.com', 'chaofeis@gmail.com');
+      newstr = newstr.replace('185-****-****', '185-1461-6567');
+      
       var oldstr = document.body.innerHTML;
       document.body.innerHTML = headstr+newstr+footstr;
       window.print();
@@ -23,7 +26,7 @@ export default class Resume extends Component {
 
     const content = {
       __html: `
-          ## A web developer
+          ## 孙超飞 (Web Developer)
 
           @@
           @@
@@ -46,7 +49,7 @@ export default class Resume extends Component {
 
           - Use Angular@1.x to fix issues and implement features like commenting files and dnd-mode.
           - Refactor BearyChat SPA with React and Redux.
-          - Build a [UIkit](http://uikit.stage.bearychat.com/) with colleagues.
+          - Build a UIkit with colleagues.
           - Rewrite [all register and login pages](https://bearychat.com/start) and realize i18n.
 
           ## Web Developer @[X Man Legal](http://xmanlegal.com/)  {09/2015—01/2016}
