@@ -16,7 +16,7 @@ export default class Resume extends Component {
       var newstr = document.all.item(printpage).innerHTML;
       newstr = newstr.replace('********@gmail.com', 'chaofeis@gmail.com');
       newstr = newstr.replace('185-****-****', '185-1461-6567');
-      
+
       var oldstr = document.body.innerHTML;
       document.body.innerHTML = headstr+newstr+footstr;
       window.print();
@@ -31,11 +31,8 @@ export default class Resume extends Component {
           @@
           @@
           @@  Email: [********@gmail.com](mailto:chaofeis@gmail.com)
-          @@  TEL: [(+86) 185-****-****](tel:+86-185-1461-6567)
           @@  Twitter: [@chaofeis](https://twitter.com/chaofeis)
-          @@  Weibo: [@chaofeis](http://weibo.com/u/1825990963)
-          @@  Douban: [@chaofeis](http://www.douban.com/people/chafel)
-          @@  Website: [Github Pages](https://chafel.github.io/)
+          @@  CSS Demos: [@chaofei](https://codepen.io/chaofei/)
 
           # Experience
 
