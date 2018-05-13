@@ -1,0 +1,21 @@
+.BlogList {
+    padding: 24px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.Blog {
+    border: 2px solid cornflowerblue;
+    box-shadow: cornflowerblue 4px 3px;
+    margin: 10px;
+    padding: 12px;
+}
+
+.Blog-info {
+    color: darkcyan;
+    font-size: smaller;
+}
+
+.Blog-info + .Blog-info {
+    margin-left: 10px;
+}
