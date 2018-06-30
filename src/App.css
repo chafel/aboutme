@@ -10,12 +10,23 @@
 }
 
 .App-header {
-  height: 50px;
+  height: 70px;
   line-height: 50px;
   padding: 20px;
   color: #eee;
   box-shadow: 0 3px 14px 0 RGBA(0, 0, 0, .2);
   background-color: #14CCA7;
+}
+
+.links {
+  margin: 0;
+  list-style: none;
+  line-height: 1;
+}
+
+.link {
+  margin: 6px 12px;
+  display: inline-block;
 }
 
 .App-title {

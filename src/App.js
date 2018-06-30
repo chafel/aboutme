@@ -12,6 +12,12 @@ function App() {
       <header className="App-header">
         <img src={logo} alt="logo" className="App-logo"/>
         <span className="App-title">lifelog</span>
+
+        <ul className="links">
+          <li className="link"><a href="https://twitter.com/chaofeis">twitter</a></li>
+          <li className="link"><a href="https://www.douban.com/people/chafel/">douban</a></li>
+          <li className="link"><a href="https://www.instagram.com/sunchaofei/">instagram</a></li>
+        </ul>
       </header>
       <div className="App-content">
         <BlogList/>
