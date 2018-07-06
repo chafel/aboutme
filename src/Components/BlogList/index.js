@@ -31,16 +31,23 @@ export default class BlogList extends Component {
             updated_at,
             id,
             likes_count,
-            comments_count
+            comments_count,
+            description
           } = post;
 
           return (
             <div className="Blog" key={id}>
               <h4>
-                <a href={`https://yuque.com/page/notes.cx/${slug}`}>
+                <a href={`https://yuque.com/chaofeis/lifelog/${slug}`}>
                   {title}
                 </a>
               </h4>
+              <div>
+                摘要：
+                <i>
+                  {description}
+                </i>
+              </div>
               <span className="Blog-info">
                 - 更新于 <strong><i>{updated_at}</i></strong>
               </span>
